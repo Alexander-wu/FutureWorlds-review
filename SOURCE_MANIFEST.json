@@ -23,8 +23,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "45938c43d2eb8e60860d7a286b95ca7d9f7db955fab3aee8508e81187a33f83f",
-      "bytes": 8918
+      "sha256": "4000ef668cb3cce9ac117f54802e9fc843e3c97aa13a488ff88a906cf78b7543",
+      "bytes": 8995
     },
     {
       "path": "README.zh-CN.md",
@@ -483,23 +483,23 @@
     },
     {
       "path": "site/downloads/FutureWorlds-code.zip",
-      "sha256": "c8c321514e9257e0c7ce87c8ddf16b65cd9e74f443f509f1ce04f39b0b2f7cfb",
-      "bytes": 882634
+      "sha256": "77f0547ff69cf8d1584ba31782ab3b08972ef3808b671227275e58b9ae41847e",
+      "bytes": 882689
     },
     {
       "path": "site/guides.html",
-      "sha256": "89f133d3159fae67e0d5e2f46993e7a2b7187cd01ad050fdf7ca5ce8f3dc188b",
-      "bytes": 8995
+      "sha256": "b801d76b87da56ad9f27b06e32c5e0243cbce4c2001e49a71b23812c03f1a67c",
+      "bytes": 9007
     },
     {
       "path": "site/index.html",
-      "sha256": "8745931b2957310ea94c007661497a235a7ce84f74cc73e7340f8e8813306e5b",
-      "bytes": 18586
+      "sha256": "cf4d61295b1c15693fd6beec52877d2e87fe9abf58e9ae5052e04c21b02e0fd0",
+      "bytes": 18670
     },
     {
       "path": "site/paper.pdf",
-      "sha256": "391f6c222cb971ad69ec23fb553cbbbd13cd735430c95cb47223e21f9bd8d4c3",
-      "bytes": 17517130
+      "sha256": "1d8529701e5b3a8e3ec1871e1d9f4f8ebfe08dbcc8ea304e4415f449e898161a",
+      "bytes": 17518272
     },
     {
       "path": "site/style.css",

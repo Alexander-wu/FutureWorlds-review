@@ -1,6 +1,6 @@
 # Anonymous review artifact
 
-This snapshot accompanies the ICLR 2027 submission. Download the code archive from the project page and extract it before following the instructions below. Third-party licenses and upstream attribution are retained.
+This snapshot accompanies the ICLR 2027 submission. Use the ZIP download button on this repository, extract the archive, and enter the extracted directory before following the instructions below. Third-party licenses and upstream attribution are retained.
 
 <div align="center">
 
@@ -9,7 +9,7 @@ This snapshot accompanies the ICLR 2027 submission. Download the code archive fr
 
 **Construct diverse futures · Maintain individual histories · Learn from relative quality**
 
-[中文说明](README.zh-CN.md) · [Getting started](docs/GETTING_STARTED.md) · [Reproduction](docs/REPRODUCTION.md) · [Model loading](docs/LOADING.md) · [Project website](site/index.html) · [Release status](#release-status)
+[中文说明](README.zh-CN.md) · [Getting started](docs/GETTING_STARTED.md) · [Reproduction](docs/REPRODUCTION.md) · [Model loading](docs/LOADING.md) · [Project website](https://anonymous.4open.science/w/FutureWorlds-BAEC/) · [Release status](#release-status)
 
 </div>
 
