@@ -143,7 +143,7 @@ USE_TF=0 .venv/bin/python -m unittest discover -s tests -p 'test_*.py' -v
 - [ ] Public Hugging Face model repository and data-access instructions
 - [ ] Final license for original additions, paper link and citation metadata
 
-Paper and checkpoint links will be added when published. The external-baseline training repositories, WorldArena diagnostic scripts and manuscript source are not included in these one-command suites.
+The anonymous paper is included on the project page; checkpoint downloads are pending. The external-baseline training repositories, WorldArena diagnostic scripts and manuscript source are not included in these one-command suites.
 
 ## Project website
 
@@ -153,7 +153,7 @@ The dependency-free site is in [`site/`](site/). Preview locally:
 python3 -m http.server 8785 --bind 127.0.0.1 --directory site
 ```
 
-Open `http://127.0.0.1:8785/`. A GitHub Actions workflow deploys **only `site/`** to GitHub Pages after the repository owner enables Pages. See [deployment instructions](docs/GITHUB_PAGES.md).
+Open `http://127.0.0.1:8785/`. The anonymous project page includes local media and a reproduction guide.
 
 ## Attribution and licensing
 
