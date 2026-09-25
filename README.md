@@ -44,7 +44,7 @@ Selected qualitative examples show object appearance, spatial relations and robo
 
 ## Quick start
 
-Clone the repository, install dependencies, and configure your local assets:
+Extract the code archive, install dependencies, and configure your local assets:
 
 ```bash
 # Extract FutureWorlds-code.zip, then enter its directory

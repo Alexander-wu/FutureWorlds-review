@@ -1,5 +1,5 @@
 {
-  "scope": "Anonymous review repository and project website",
+  "scope": "Anonymous review snapshot; weights/data are separate dependencies",
   "files": [
     {
       "path": ".dockerignore",
@@ -23,8 +23,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "a449cc8789593113ae1020fdaa402ca8bd05b91e4c54dbed82755ad9282a1a4d",
-      "bytes": 8972
+      "sha256": "67e63ae20a226e0b6db8e9907264b7bb0295715cd059420e05de6aef3d50c560",
+      "bytes": 8976
     },
     {
       "path": "README.zh-CN.md",
@@ -112,6 +112,11 @@
       "bytes": 728003
     },
     {
+      "path": "configs/train-workflow.example.json",
+      "sha256": "103ac9441f726813dc96200d0e5ae3f81a73c2a4b4b8e586984573076495d030",
+      "bytes": 521
+    },
+    {
       "path": "configs/train/bridge_codec.json",
       "sha256": "0e2b739efe8f1da90c30fb1f3f81fbf102f015544d4f7ff22cd65dd3c49bac61",
       "bytes": 1824
@@ -197,11 +202,6 @@
       "bytes": 738
     },
     {
-      "path": "configs/train-workflow.example.json",
-      "sha256": "103ac9441f726813dc96200d0e5ae3f81a73c2a4b4b8e586984573076495d030",
-      "bytes": 521
-    },
-    {
       "path": "docs/ANONYMOUS_REVIEW.md",
       "sha256": "cc3f88fa963aba6f9496d6edd93185ffeb963658444945e3b3a3077565d169f5",
       "bytes": 567
@@ -255,6 +255,11 @@
       "path": "examples/trace_search.py",
       "sha256": "992fd716cb2eb2b7cc5dc646eb803befd07b6e0312bd402b6bdfad686ef9e0bf",
       "bytes": 2336
+    },
+    {
+      "path": "index.html",
+      "sha256": "9d923197e654a7a27fa8f421cecd27a81c173435f9de57b657c3c45c3ada7a4e",
+      "bytes": 312
     },
     {
       "path": "licenses/Apache-2.0.txt",
@@ -478,8 +483,8 @@
     },
     {
       "path": "site/downloads/FutureWorlds-code.zip",
-      "sha256": "06fbfd11c243be91af6274e47e11c2fb14c57a8d70eba94fb30279d6282a40eb",
-      "bytes": 882669
+      "sha256": "240aea5ca6b0c45dfef67758e073e6c4028cb13c4c0097b4b868171f584686b2",
+      "bytes": 882671
     },
     {
       "path": "site/guides.html",
