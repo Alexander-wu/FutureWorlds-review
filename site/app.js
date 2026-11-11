@@ -57,7 +57,7 @@ if (resultData) {
       body.append(tr);
     }
     $('table caption').textContent = `32-frame results on ${dataset}`;
-    $('#feedback').textContent = `Showing ${dataset}: 13 models, 128 trajectories.`;
+    $('#feedback').textContent = `Showing ${dataset}: ${data.methods.length} methods, 128 trajectories.`;
   }
   for (const button of all('[data-dataset]')) button.addEventListener('click', () => {
     selectTab(button); renderResults(button.dataset.dataset);
@@ -81,49 +81,3 @@ $('#actual-size')?.addEventListener('click', () => {
   $('#actual-size').setAttribute('aria-pressed',String(native));
   $('#actual-size').textContent = native ? 'Fit to window' : 'Actual size';
 });
-
-const rolloutVideo = $('#rollout-video');
-if (rolloutVideo) {
-  const cases = {
-    rt1: {name:'RT-1',title:'Moving a can',instruction:'“Move 7up can near pepsi can.”',description:'Compare the can’s motion and its relation to the gripper as the prediction unfolds.',updates:500},
-    bridge: {name:'BridgeV2',title:'Moving a pot',instruction:'“Place the pot on the bottom part of the napkin.”',description:'Follow the pot and gripper to compare object identity and movement over time.',updates:200},
-    robocasa: {name:'RoboCasa',title:'Motion in a kitchen scene',instruction:'Microwave preparation · selected prediction segment',description:'Compare the evolving arm and gripper poses against the recorded future.',updates:400}
-  };
-  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
-  for (const button of all('[data-rollout]')) button.addEventListener('click', () => {
-    selectTab(button);
-    const key=button.dataset.rollout, item=cases[key];
-    rolloutVideo.pause();
-    rolloutVideo.poster=`assets/rollouts/${key}.jpg`;
-    rolloutVideo.src=`assets/rollouts/${key}.mp4`;
-    rolloutVideo.setAttribute('aria-label',`${item.name} synchronized ground truth, SFT and MemSPO prediction`);
-    $('#rollout-title').textContent=item.title;
-    $('#rollout-instruction').textContent=item.instruction;
-    $('#rollout-description').textContent=item.description;
-    $('#rollout-checkpoint').textContent=`MemSPO: ${item.updates} updates.`;
-    $('#rollout-frame').textContent='Frame +01 / 32';
-    rolloutVideo.load();
-    if (!reducedMotion.matches) rolloutVideo.play().catch(()=>{});
-  });
-  rolloutVideo.addEventListener('timeupdate',()=>{
-    const frame=Math.min(32,Math.floor(rolloutVideo.currentTime*5)+1);
-    $('#rollout-frame').textContent=`Frame +${String(frame).padStart(2,'0')} / 32`;
-  });
-  // Start once on entering the viewport; native controls retain user pause/seek intent.
-  const observer = new IntersectionObserver(entries=>{
-    if(entries.some(entry=>entry.isIntersecting)){
-      if(!reducedMotion.matches) rolloutVideo.play().catch(()=>{});
-      observer.disconnect();
-    }
-  },{threshold:.35});
-  observer.observe(rolloutVideo);
-  reducedMotion.addEventListener('change',()=>{if(reducedMotion.matches) rolloutVideo.pause();});
-}
-
-const explanation = $('#method-video video');
-$('#play-explainer')?.addEventListener('click',()=>{
-  if(explanation.paused){rolloutVideo?.pause();explanation.play().catch(()=>{$('#play-explainer').textContent='Play overview ▷';});}
-  else explanation.pause();
-});
-explanation?.addEventListener('play',()=>{$('#play-explainer').textContent='Pause overview Ⅱ';rolloutVideo?.pause();});
-explanation?.addEventListener('pause',()=>{$('#play-explainer').textContent='Play overview ▷';});

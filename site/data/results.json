@@ -1,9 +1,9 @@
 {
   "title": "32-frame action-conditioned video prediction",
   "trajectories_per_dataset": 128,
-  "source": "Manuscript Table 1",
-  "source_sha256": "e262c938da80c31e0b5a3c26a2bc0cf922e459d5cce4b7db2d050d6c110b53b8",
-  "note": "Reported manuscript results; not a rerun of the newly consolidated pipeline. Some baseline results are supplied by the project author from another server.",
+  "source": "Current manuscript Table 1",
+  "source_sha256": "1b8249b3127e19f16f1384c85e4191ca0cea863b7371d24bd45afb375570de31",
+  "note": "Dagger denotes official released checkpoint evaluation on RT-1 only. External baseline training budgets are not matched. Main-table FutureWorlds and the matched 200-update experiment below are separate comparisons.",
   "methods": [
     {
       "method": "FitVid",
@@ -42,29 +42,11 @@
       }
     },
     {
-      "method": "IRASim",
+      "method": "Vid2World \u2020",
       "RT-1": {
-        "psnr": 16.83,
-        "ssim": 0.5936,
-        "lpips": 0.3474
-      },
-      "BridgeV2": {
-        "psnr": 17.39,
-        "ssim": 0.7094,
-        "lpips": 0.2524
-      },
-      "RoboCasa": {
-        "psnr": 13.55,
-        "ssim": 0.5834,
-        "lpips": 0.3706
-      }
-    },
-    {
-      "method": "Vid2World",
-      "RT-1": {
-        "psnr": 19.03,
-        "ssim": 0.721,
-        "lpips": 0.196
+        "psnr": 19.67,
+        "ssim": 0.6997,
+        "lpips": 0.2573
       },
       "BridgeV2": {
         "psnr": 18.92,
@@ -78,29 +60,11 @@
       }
     },
     {
-      "method": "Ctrl-World",
+      "method": "DriftWorld \u2020",
       "RT-1": {
-        "psnr": 19.11,
-        "ssim": 0.711,
-        "lpips": 0.2522
-      },
-      "BridgeV2": {
-        "psnr": 18.38,
-        "ssim": 0.6932,
-        "lpips": 0.2621
-      },
-      "RoboCasa": {
-        "psnr": 15.55,
-        "ssim": 0.7035,
-        "lpips": 0.2686
-      }
-    },
-    {
-      "method": "DriftWorld",
-      "RT-1": {
-        "psnr": 20.54,
-        "ssim": 0.741,
-        "lpips": 0.2595
+        "psnr": 20.51,
+        "ssim": 0.7407,
+        "lpips": 0.2597
       },
       "BridgeV2": {
         "psnr": 20.32,
@@ -114,29 +78,11 @@
       }
     },
     {
-      "method": "WEAVER",
+      "method": "RLVR-World \u2020",
       "RT-1": {
-        "psnr": 19.74,
-        "ssim": 0.7617,
-        "lpips": 0.2321
-      },
-      "BridgeV2": {
-        "psnr": 18.74,
-        "ssim": 0.7447,
-        "lpips": 0.2476
-      },
-      "RoboCasa": {
-        "psnr": 14.62,
-        "ssim": 0.7136,
-        "lpips": 0.2726
-      }
-    },
-    {
-      "method": "RLVR-World",
-      "RT-1": {
-        "psnr": 19.47,
-        "ssim": 0.736,
-        "lpips": 0.182
+        "psnr": 21.21,
+        "ssim": 0.7783,
+        "lpips": 0.1822
       },
       "BridgeV2": {
         "psnr": 19.06,
@@ -147,24 +93,6 @@
         "psnr": 15.8,
         "ssim": 0.71,
         "lpips": 0.2017
-      }
-    },
-    {
-      "method": "PersistWorld",
-      "RT-1": {
-        "psnr": 18.77,
-        "ssim": 0.6995,
-        "lpips": 0.2717
-      },
-      "BridgeV2": {
-        "psnr": 19.07,
-        "ssim": 0.7154,
-        "lpips": 0.2408
-      },
-      "RoboCasa": {
-        "psnr": 15.61,
-        "ssim": 0.7112,
-        "lpips": 0.2639
       }
     },
     {
@@ -219,6 +147,24 @@
         "psnr": 13.92,
         "ssim": 0.6349,
         "lpips": 0.3278
+      }
+    },
+    {
+      "method": "SFT initialization",
+      "RT-1": {
+        "psnr": 21.37,
+        "ssim": 0.786,
+        "lpips": 0.1734
+      },
+      "BridgeV2": {
+        "psnr": 21.74,
+        "ssim": 0.7942,
+        "lpips": 0.1448
+      },
+      "RoboCasa": {
+        "psnr": 17.5,
+        "ssim": 0.7519,
+        "lpips": 0.1971
       }
     },
     {

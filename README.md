@@ -1,11 +1,11 @@
 # Anonymous review artifact
 
-This snapshot accompanies the ICLR 2027 submission. Use the ZIP download button on this repository, extract the archive, and enter the extracted directory before following the instructions below. Third-party licenses and upstream attribution are retained.
+This snapshot accompanies the CVPR 2027 submission. Use the ZIP download button on this repository, extract the archive, and enter the extracted directory before following the instructions below. Third-party licenses and upstream attribution are retained.
 
 <div align="center">
 
 # FutureWorlds
-### Learning Robotic World Models from Alternative Futures
+### Branch-Specific Memory for Long-Horizon Robotic World Models
 
 **Construct diverse futures · Maintain individual histories · Learn from relative quality**
 
@@ -17,14 +17,20 @@ This snapshot accompanies the ICLR 2027 submission. Use the ZIP download button 
 
 FutureWorlds learns action-conditioned robotic world models from alternative predictions. Diverse beam search constructs candidate futures, bounded candidate-specific memory maintains their histories, and **MemSPO** (Memory-Conditioned Search-Guided Policy Optimization) learns from their relative trajectory rewards.
 
-> **Release candidate.** Training, inference and evaluation workflows are implemented. Public checkpoint/data downloads and final licensing are pending. The portable pipeline passes 19 Linux CPU checks, including two-process DDP, plus real-checkpoint first-frame comparisons on three datasets. Full GPU reproduction remains to be validated.
+> **Release candidate.** Training, inference and evaluation workflows are implemented. Anonymous checkpoint/data downloads and final licensing are pending. The portable pipeline passes 19 Linux CPU checks, including two-process DDP, plus real-checkpoint first-frame comparisons on three datasets. Full GPU reproduction remains to be validated.
 
 ## Highlights
 
 - **Three robotic datasets:** RT-1, BridgeV2 and RoboCasa, with explicit action layouts and fixed evaluation cohorts.
 - **Search-guided post-training:** MemSPO, GRPO and ordinary-beam controls share a unified trainer.
-- **Persistent candidate memory:** generation and policy scoring use matching retained histories.
+- **Branch-specific memory:** generation and policy scoring use matching retained histories.
 - **A reproducible workflow:** data conversion, frozen-feature caching, SFT, post-training, resume, checkpoint export, RGB prediction and metric aggregation.
+
+## Matched post-training
+
+Current Table 2 uses the same SFT initialization and a 200-update RL budget. At 32 frames on RT-1, LPIPS / SSIM are **0.1734 / 0.7860** (SFT), **0.1739 / 0.7858** (GRPO), and **0.1565 / 0.8016** (MemSPO). LPIPS reductions are **9.75%** and **9.98%** against SFT and GRPO. These are distinct from the main-table checkpoints below.
+
+[All horizons and datasets](site/data/matched_post_training.csv)
 
 ## Reported results
 
@@ -32,11 +38,11 @@ Manuscript Table 1: **32 predicted frames, 128 trajectories per dataset**. These
 
 | Dataset | PSNR ↑ | SSIM ↑ | LPIPS ↓ | LPIPS reduction vs. strongest baseline |
 |:--|--:|--:|--:|--:|
-| RT-1 | **22.47** | **0.8026** | **0.1551** | **14.78%** |
+| RT-1 | **22.47** | **0.8026** | **0.1551** | **14.87%** |
 | BridgeV2 | **22.03** | **0.7968** | **0.1409** | **20.84%** |
 | RoboCasa | **18.47** | **0.7659** | **0.1833** | **9.12%** |
 
-[Full 13-model comparison (CSV)](site/data/results.csv) · [Machine-readable data and provenance](site/data/results.json)
+[Current 10-row comparison (CSV)](site/data/results.csv) · [Machine-readable data and provenance](site/data/results.json)
 
 ![Selected qualitative comparisons with matched detail views](site/assets/qualitative.png)
 

@@ -1,5 +1,5 @@
 {
-  "scope": "Anonymous review snapshot; weights/data are separate dependencies",
+  "scope": "Anonymous CVPR review artifact",
   "files": [
     {
       "path": ".dockerignore",
@@ -23,8 +23,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "4000ef668cb3cce9ac117f54802e9fc843e3c97aa13a488ff88a906cf78b7543",
-      "bytes": 8995
+      "sha256": "a40b7dac0326a73b104b4ec4da2c8369123f52aa1242397105977fd4141d8871",
+      "bytes": 9423
     },
     {
       "path": "README.zh-CN.md",
@@ -398,108 +398,78 @@
     },
     {
       "path": "site/app.js",
-      "sha256": "db555e8d2487617aeadea8ac904bdf1657b5e5604c396080cc365179df398457",
-      "bytes": 7323
+      "sha256": "ee78337a3f29423ef3405ad9b3ac8dcfa6048ab1f636e07597736e8959b8f91b",
+      "bytes": 4564
+    },
+    {
+      "path": "site/assets/diagnostics.png",
+      "sha256": "3159e21a52030234402b723ffef66fc2b8ef8435e796cbf418d1b46b31debd8c",
+      "bytes": 141324
     },
     {
       "path": "site/assets/efficiency.png",
-      "sha256": "0db64dfe8bd48cb98e3d31b8c3af591c6a01fe9f34820d51645eb95969e68615",
-      "bytes": 303984
+      "sha256": "fd9ac73dd4fbdae8f1bf79ef329664243e2213df11dbd7d23ffc820fa6a656c2",
+      "bytes": 40323
     },
     {
-      "path": "site/assets/futureworlds-explainer-en.jpg",
-      "sha256": "f5bdd56aa0f444651797d53d3ff46291193245395934b928d548479e3bd5cbe3",
-      "bytes": 174306
-    },
-    {
-      "path": "site/assets/futureworlds-explainer-en.mp4",
-      "sha256": "4e76b26fac6f29b713e6acb0e190d8d58d9e2f6d2aa6dcdca32b2d87e67ee6ee",
-      "bytes": 2030867
+      "path": "site/assets/intro.png",
+      "sha256": "63a3fc8b0de159c7fabd49cc0819801e9cc731276c68bbf2684b75b5ebf0480a",
+      "bytes": 7904746
     },
     {
       "path": "site/assets/method.png",
-      "sha256": "ebf292e9c38327fe70a41742485480276b11434928139a471882e6c4ec19dda3",
-      "bytes": 7509014
+      "sha256": "21fad53ba90c27360d460187c529abe231eb66ae4ec177fdb33debd46b15739b",
+      "bytes": 1850943
     },
     {
       "path": "site/assets/qualitative.png",
-      "sha256": "d64631695be020813cb98d0115ea09aff051c6304f243d005bac185a5a7ddb49",
-      "bytes": 2926488
-    },
-    {
-      "path": "site/assets/rollouts/bridge.jpg",
-      "sha256": "ffb014e8d22e1f26abafbca6c726f212d8ec8b411a593bcc792339d6acb04633",
-      "bytes": 101152
-    },
-    {
-      "path": "site/assets/rollouts/bridge.mp4",
-      "sha256": "29421b99e676972611d4376cdc4a4b91b5011385485205f7fa939ddddcbcd996",
-      "bytes": 545736
-    },
-    {
-      "path": "site/assets/rollouts/robocasa.jpg",
-      "sha256": "1098880352a12a2ec87c2cc392cf08d72120d44ae1d8b1d5923b74a276f1b232",
-      "bytes": 75177
-    },
-    {
-      "path": "site/assets/rollouts/robocasa.mp4",
-      "sha256": "c8891036ef914e2fda10132975b9e00e43a18ebc96f9a2f905da41fb3b7a7ce9",
-      "bytes": 308468
-    },
-    {
-      "path": "site/assets/rollouts/rt1.jpg",
-      "sha256": "c05def50d3f112828752ef15b6d3e3b99b0562d3c837c1c422415d691f7c8d7a",
-      "bytes": 70671
-    },
-    {
-      "path": "site/assets/rollouts/rt1.mp4",
-      "sha256": "543ae1470c0ddd69f503f936e92066bd799b8a26d70cb64311f69a88c2847b48",
-      "bytes": 388970
+      "sha256": "e0af9d3286488915edadb59cf0a78b6a1f5384be17e0fb7060d0b66654ac1b0e",
+      "bytes": 1976623
     },
     {
       "path": "site/data/assets.json",
-      "sha256": "0418e3dddd1d8dc383671c99b27e6fdd344228f9e44b6ae8d5355c7e564cae92",
-      "bytes": 3692
+      "sha256": "ca062f96e0a566b236ff5ddff9d1272e54980110773636c4be78af58ee74c9a3",
+      "bytes": 1398
     },
     {
-      "path": "site/data/explainer.json",
-      "sha256": "a68eb29af9703e45fe6c842371f8bba0fc098515d199c5b8a289ed82c7cc0847",
-      "bytes": 2533
+      "path": "site/data/matched_post_training.csv",
+      "sha256": "e7c4fe36d4cc2095ba90ffa43ceb4f69dc2fb2cbcf1ef99f361e2d0fa5c832e4",
+      "bytes": 1611
+    },
+    {
+      "path": "site/data/matched_post_training.json",
+      "sha256": "ab2774d7ea1b7b9d63db786992daa9df564089ca028ef83bf1466b19165b7bd7",
+      "bytes": 5859
     },
     {
       "path": "site/data/results.csv",
-      "sha256": "99d6ef4faa332ab162bcbb01ba6927847769b4a256f8598f6854494aba9f6eff",
-      "bytes": 1854
+      "sha256": "86723a1ff10c1da2f11f4e5a18c30f59bf1d1b112ba52bd316a6f73a1d833ac3",
+      "bytes": 1266
     },
     {
       "path": "site/data/results.json",
-      "sha256": "e4c575c778493f9cce1e58f92c27205d6486258c2058b668b0bed0ac6638588c",
-      "bytes": 4780
-    },
-    {
-      "path": "site/data/rollouts.json",
-      "sha256": "756a180e4d1c51ab43d27156ae46dcba8c4afa4bdcffd702410af6d0ac7d0159",
-      "bytes": 2538
+      "sha256": "b4f52bc093b6e0d7b5aed0e3da8321610b10ef8eb0800e91922900b760012281",
+      "bytes": 3873
     },
     {
       "path": "site/downloads/FutureWorlds-code.zip",
-      "sha256": "77f0547ff69cf8d1584ba31782ab3b08972ef3808b671227275e58b9ae41847e",
-      "bytes": 882689
+      "sha256": "11a222c3df251a2ff5c5e1ac4e1825f81a26bf0522ecf991cb52a9b9f490fcf0",
+      "bytes": 882850
     },
     {
       "path": "site/guides.html",
-      "sha256": "b801d76b87da56ad9f27b06e32c5e0243cbce4c2001e49a71b23812c03f1a67c",
-      "bytes": 9007
+      "sha256": "67aa5efb0eaf2ff14b670aa2b94f55d89b753426236ca80338cc584461c87201",
+      "bytes": 9009
     },
     {
       "path": "site/index.html",
-      "sha256": "cf4d61295b1c15693fd6beec52877d2e87fe9abf58e9ae5052e04c21b02e0fd0",
-      "bytes": 18670
+      "sha256": "f87f7bd4b9374d2badade9b5646f99b9ff29d6ec91997c1a11be5c5f98b70403",
+      "bytes": 20468
     },
     {
       "path": "site/paper.pdf",
-      "sha256": "1d8529701e5b3a8e3ec1871e1d9f4f8ebfe08dbcc8ea304e4415f449e898161a",
-      "bytes": 17518272
+      "sha256": "2f05dc85c1e5e96422019b8ad870cfdd9ae230c4ed5d3324fbd6b589567fd775",
+      "bytes": 15113730
     },
     {
       "path": "site/style.css",
